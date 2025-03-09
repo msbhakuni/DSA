@@ -15,7 +15,7 @@ class longSubsNonRepeatChar {
         for(int right=0;right<str.length();right++){
             char c = str.charAt(right);
             if(map.containsKey(c)){
-                left = map.get(c)+1;
+                left = Math.max(map.get(c)+1,left);  //Math.max is important. Consider case of abba. Left should increase in forward manner.
             }
             map.put(c,right);
             max_len = Math.max(max_len,right-left+1);
