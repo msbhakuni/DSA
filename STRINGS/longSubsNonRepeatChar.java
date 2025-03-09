@@ -1,6 +1,7 @@
 import java.util.*;
 //Longest substring without repeating characters
 // Classic example of sliding window problem
+// we are storing character and its index in the hashmap
 
 class longSubsNonRepeatChar {
     public static void main(String args[]){
