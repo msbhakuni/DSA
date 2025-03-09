@@ -1,5 +1,6 @@
 import java.util.*;
 //Longest substring without repeating characters
+// Classic example of sliding window problem
 
 class longSubsNonRepeatChar {
     public static void main(String args[]){
